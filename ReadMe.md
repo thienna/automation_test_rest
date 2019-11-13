@@ -61,10 +61,7 @@ exports.config = {
 tests: './*_test.js',
 ```
 
-2. Chúng ta nên đánh số thứ tự chạy bằng số 01, 02, 03
-
-
-
-
-
-
+2. Chúng ta nên đánh số thứ tự chạy bằng số 01, 02, 03. Ví dụ:
+  - 01_basic_test.js
+  - 02_advanced_test.js
+  - 03_getuser_test.js
