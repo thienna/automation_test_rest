@@ -10,6 +10,7 @@ Clone repo này và sau đó chạy file main.py để dựng REST server thử 
 ```shell
 $ git clone https://github.com/TechMaster/automation_test_rest.git
 $ cd automation_test_rest
+$ python3 -m venv venv
 $ source venv/bin/activate
 $ pip install -r requirements.txt
 $ python main.py
