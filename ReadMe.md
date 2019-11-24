@@ -4,7 +4,7 @@
 quản lý việc thêm, tìm kiếm, đổi password của user
 
 ## Cài đặt không dùng Docker
-
+Chú ý việc cài đặt Sanic trên Windows tương đối khó khăn. Nếu dùng Windows bạn nên chuyển sang cài đặt bằng Docker
 Clone repo này và sau đó chạy file main.py để dựng REST server thử nghiệm lắng nghe ở cổng 8000
 
 ```shell
