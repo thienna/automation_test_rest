@@ -3,7 +3,7 @@
 Ứng dụng ví dụ được viết bằng [Sanic framework](https://github.com/huge-success/sanic)
 quản lý việc thêm, tìm kiếm, đổi password của user
 
-## Cài đặt
+## Cài đặt không dùng Docker
 
 Clone repo này và sau đó chạy file main.py để dựng REST server thử nghiệm lắng nghe ở cổng 8000
 
@@ -16,6 +16,19 @@ $ pip install -r requirements.txt
 $ python main.py
 ```
 Thử mở browser rồi truy cập vào http://localhost:8000/users xem danh sách users trả về
+
+## Cài đặt sử dụng Docker
+Hãy cài đặt Docker trên máy tính của bạn
+Mở terminal hoặc Powershell (windows), chạy lệnh ```docker-compose up -d```
+
+```shell
+$ git clone https://github.com/TechMaster/automation_test_rest.git
+$ cd automation_test_rest
+$ docker-compose up -d
+```
+Mở browser rồi truy cập vào http://localhost:8000/users xem danh sách users trả về
+
+
 
 ## Kiểm thử
 

@@ -1,5 +1,5 @@
 exports.config = {
-  tests: './*_test.js',
+  tests: './scenario/*.js',
   helpers: {
     REST: {
       endpoint: 'http://localhost:8000'
