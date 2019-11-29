@@ -36,3 +36,14 @@ Scenario('password does not contain numeric', async (I) => {
   assert.equal(result.data['status'], false);
 
 });
+
+Scenario('password does not contain ', async (I) => {
+  let user = await I.sendGetRequest('/users/1');
+  let user_email = user.data["email"];
+
+  let result = await I.sendPostRequest('/users/change_pass',
+      { 'email': user_email, 'pass': 'new_pa$$w@rd123' }
+  );
+  assert.equal(result.data['status'], true);
+
+});

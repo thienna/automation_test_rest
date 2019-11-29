@@ -38,4 +38,15 @@ Scenario('delete a user', async (I) => {
   assert.equal(result.data, true);
 });
 
+Scenario('search a user by email', async (I) => {
+
+    let users = await I.sendGetRequest('/users/Georgeta%20Vasiliev');
+    assert.equal(users.data.name, "Georgeta Vasiliev");
+});
+
+Scenario('search a user by name', async (I) => {
+
+    let users = await I.sendGetRequest('/users/hsobtka0@sphinn.com');
+    assert.equal(users.data.email, "hsobtka0@sphinn.com");
+});
 
