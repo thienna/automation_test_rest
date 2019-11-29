@@ -94,6 +94,8 @@ async def get_user_by_keyword(request, str):
         for user in users:
             if str in user["name"].lower():
                 return json(user)
+
+    
     return json("")
 
 
